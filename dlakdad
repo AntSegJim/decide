@@ -1,0 +1,825 @@
+[33mcommit 25acd48eb9f165fd83e8d41e0eb3606cbccde19c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AntSegJim <antonio.alandalus97@gmail.com>
+Date:   Tue Oct 30 10:19:10 2018 +0100
+
+    s
+    
+    asda
+    ad
+    sada
+    d
+
+[33mcommit 213dc8950b1f8c49829935900557a8a586a25722[m[33m ([m[1;33mtag: v1.0.0-2018[m[33m)[m
+Merge: d408328 53c2bf1
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Oct 2 16:03:24 2018 +0200
+
+    Merge pull request #34 from wadobo/cryptodome
+    
+    Cryptodome
+
+[33mcommit 53c2bf1b6d252906577a597f0e69c88fbca6acc3[m[33m ([m[1;31morigin/cryptodome[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Oct 2 07:34:41 2018 +0200
+
+    Fixed test: unsupported operand between int and Integer
+
+[33mcommit 0a89eb414718d9b9e216f2d5f2001990918cbb3e[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Oct 1 19:29:29 2018 +0200
+
+    fix crypto with cryptodome
+
+[33mcommit 2a49b0b3c3ab9eca401095a91fb656c0df6302be[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Sep 21 18:22:40 2018 +0200
+
+    mixnet: key bits configuable in settings
+
+[33mcommit 54e9c87c34c94171738f00637004b341e105c99b[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Sep 21 17:18:05 2018 +0200
+
+    mixnet: Store key as textfield to avoid db problems
+    
+    IntegerField isn't valid for big keys so we need to store as textfield
+    in the database and convert to int in the python code.
+
+[33mcommit 5e867e4c90977d52657666938f67f22f4c727ecb[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Sep 21 12:50:19 2018 +0200
+
+    mixnet: Use pycryptodome instead of pycrypto
+    
+    pycrypto is unmaintained and is unsecure:
+    https://github.com/dlitz/pycrypto/issues/253
+    
+    It's better to use the modern version pycryptodome that's more up to
+    date
+
+[33mcommit d408328d1acc712f1f2abd5b9a0ea7e9c83bd562[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Jun 8 10:56:54 2018 +0200
+
+    docker: network configuration
+
+[33mcommit b087fd4b6cd8e2bdd453700b6d23405ccda01878[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Thu Jun 7 21:00:59 2018 +0200
+
+    Fix web docker image with last python:alpine
+
+[33mcommit 7e721afdd353dcde2ea67670c9227594cad5f71a[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Thu Jun 7 14:34:40 2018 +0200
+
+    docker: settings with host IP for API
+
+[33mcommit 3c790c658e2d296804bf22038ac42fd7f7279001[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Thu Jun 7 14:33:30 2018 +0200
+
+    doc: More issues to do
+
+[33mcommit 41c89a9053ee560e473e0f417b81762041012915[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Jun 6 14:09:21 2018 +0200
+
+    docker: Use the docker port instead devel port
+
+[33mcommit ed8c9fe482ca3b9b3f57c3f0a6f30e57c8dae531[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Jun 6 13:21:49 2018 +0200
+
+    Line to show how to run tests with docker
+
+[33mcommit 62fc1e825cd9c667e5acfb84ab0d194ef1d0340c[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Jun 6 13:15:39 2018 +0200
+
+    docker: post_processed was renamed to postproc
+
+[33mcommit ccf49b548b16a76d4eba89956249587db64668be[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Jun 6 13:04:25 2018 +0200
+
+    rename: Move votinus directory to decide
+
+[33mcommit 9b01eda1bbd85b6cd526b4e19e48d8b1db753474[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Jun 6 12:57:14 2018 +0200
+
+    Big rename to Decide
+
+[33mcommit 545372f67b81c09a7ee3d1fc6b1e09928e575333[m
+Merge: c7d341a 96cb14e
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Jun 5 11:42:05 2018 +0200
+
+    Merge pull request #32 from wadobo/swagger
+    
+    Added swagger extensions for showed docs
+
+[33mcommit 96cb14ef766de28d2f534586e0d9b1cfcbf31648[m[33m ([m[1;31morigin/swagger[m[33m)[m
+Merge: 4beae1c c7d341a
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Jun 5 11:41:41 2018 +0200
+
+    Merge branch 'master' into swagger
+
+[33mcommit c7d341a4123676a24817eb84ee4ecb4c2c688cc3[m
+Merge: 7b6dc24 7cb48ce
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Jun 5 11:40:40 2018 +0200
+
+    Merge pull request #33 from wadobo/decoupled-auth-and-key
+    
+    Decoupled Auth and Key from mixnet app
+
+[33mcommit 7cb48ce36693e1452c60bcfde72dc9070449d26b[m[33m ([m[1;31morigin/decoupled-auth-and-key[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Jun 5 10:57:59 2018 +0200
+
+    Decoupled Auth and Key from mixnet app
+    
+    Moved Auth and Key to base because both models are used independetly by mixnet and voting
+
+[33mcommit 4beae1c7817338f3c495ced5420715d1b4ca88bf[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Fri Jun 1 13:41:38 2018 +0200
+
+    Added swagger extensions for showed docs
+    
+    The swagger doc will be in HOST/doc/
+
+[33mcommit 7b6dc248857b7a7c586c338d6161fe3e882f8014[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Fri Apr 13 11:48:15 2018 +0200
+
+    Fixed tests.
+
+[33mcommit bdce33d2b7a5b49b329e4f3bad0635fd6513a68f[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Apr 13 10:26:01 2018 +0200
+
+    store: check the user token with the uid sent
+    
+    In this patch we check if the voter is sending us the real information,
+    we check agains the authentication module to get the real user
+    information passing the authentication token and if the id isn't the
+    same we don't store this vote because is a fraudulent one.
+
+[33mcommit 7aae09379a411259a0c7fffd4fb2091e1d44297a[m
+Merge: 0647b2e 830e679
+Author: danigm <danigm@wadobo.com>
+Date:   Fri Apr 13 10:01:13 2018 +0200
+
+    Merge pull request #30 from wadobo/auth-perms
+    
+    User should be staff for doing some tasks. Closed #19
+
+[33mcommit 830e67989c67f3b63cf89ab8e6f6cb03b0ff79e9[m[33m ([m[1;31morigin/auth-perms[m[33m)[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Apr 13 09:47:55 2018 +0200
+
+    auth: Admin login authentication with auth module
+
+[33mcommit c3359b5d59d7d776bbe225d32abbfab0b4ce6a1a[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Apr 12 12:55:20 2018 +0200
+
+    User should be staff for get list store votes. Created a BaseTest for login easier in all tests.
+
+[33mcommit c0c867ec850fb991256667f0ce971003097af194[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Apr 12 11:47:40 2018 +0200
+
+    User should be staff for defined census with api call.
+
+[33mcommit c0cfa6d2b44ec070e585045576d1eb0e942f3e81[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Apr 12 11:36:05 2018 +0200
+
+    Api calls for update voting with actions: start, stop and tally.
+
+[33mcommit 08723530292a8f8c6d77a495b2fa6244f2de36e4[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Apr 12 10:13:21 2018 +0200
+
+    Added api call for create voting. User should be staff for create voting.
+
+[33mcommit 0647b2e9753e7d0be29bd7afaf53adfda72c810f[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Apr 10 12:51:35 2018 +0200
+
+    Added two images on resources for doc
+
+[33mcommit 2a828955d193fb3a6c29f9603811da1bc5b9efc3[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Apr 10 12:19:12 2018 +0200
+
+    Added images resources for doc
+
+[33mcommit 1062af7b24eeeae050d5add705cf475d898a2204[m
+Merge: 32d6419 cf69f91
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Apr 10 11:10:09 2018 +0200
+
+    Merge pull request #29 from wadobo/visualizer
+    
+    Visualizer
+
+[33mcommit cf69f91e58d4ae5d0901d886d85c506c21c682f6[m[33m ([m[1;31morigin/visualizer[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Apr 10 11:05:30 2018 +0200
+
+    Added forgot template
+
+[33mcommit ac43d3e5f318c47bf87017fcbad36494cabe3106[m
+Merge: acd652e 32d6419
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Tue Apr 10 09:41:32 2018 +0200
+
+    Merge branch 'master' into visualizer
+
+[33mcommit 32d64194f5f5b449dccc7ad3d8dea6bccb516f7c[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Apr 9 17:36:54 2018 +0200
+
+    Fix postproc in voting tally
+    
+    I've fixed the postproc call in the voting tally and also updated the
+    testvoting django command.
+    
+    I've also copied the testvoting django command to a django test, now
+    we've the mods mocked so we can test this with normal tests and this
+    command is not needed anymore, maybe we should remove in the future
+    because the test is doing basically the same with this patch.
+
+[33mcommit 30f630e9a7a11a9e763b34317400958fbfae2d64[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Apr 9 12:07:40 2018 +0200
+
+    voting: Do the postproc after the tally
+
+[33mcommit b4de9216d4e8730531774999e7ed6e163d10d7c9[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Mon Apr 9 12:02:44 2018 +0200
+
+    Added tally command in voting admin
+
+[33mcommit acd652ef8beec72af5e195f20bc2a92ec53fe6c6[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Mon Apr 9 12:33:22 2018 +0200
+
+    Added minimal visualizer for voting results
+
+[33mcommit c52feade1cf00c44238a0d33ba89ff3b3ee406b1[m
+Merge: 046bc7d 9c4ca1b
+Author: danigm <danigm@wadobo.com>
+Date:   Mon Apr 9 09:21:35 2018 +0200
+
+    Merge pull request #27 from wadobo/check_perms
+    
+    Check permissions when vote
+
+[33mcommit 9c4ca1b5c138371d62b1ad3a6f266964ec08cf8d[m[33m ([m[1;31morigin/check_perms[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Mon Apr 9 07:29:49 2018 +0200
+
+    Checked started voting when try to vote
+
+[33mcommit bc7a85b3a5809e80d027e5739a96398fd965a092[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Mon Apr 9 00:59:29 2018 +0200
+
+    Checked if voting exists and is open.
+
+[33mcommit 6bd74aa32a8b1a978440d2ac8582c289123573a8[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Sun Apr 8 20:19:38 2018 +0200
+
+    Check permissions when vote. if voters isn't in census, user can't generate vote
+
+[33mcommit 046bc7d795a6bafd16393f34cb74ecdf079b9d65[m
+Merge: 0e6672d ec76aec
+Author: danigm <danigm@wadobo.com>
+Date:   Sun Apr 8 19:48:46 2018 +0200
+
+    Merge pull request #26 from wadobo/census-ng
+    
+    Census: Added census model. Closed #6
+
+[33mcommit ec76aec990ca9582f7da28d0e8cc2091321f28dd[m[33m ([m[1;31morigin/census-ng[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Sun Apr 8 19:17:12 2018 +0200
+
+    Added census model
+
+[33mcommit 0e6672d1c0e3e57dcb21885f1735d58cdee72eb6[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Apr 4 12:45:08 2018 +0200
+
+    Use mock_query in all tests
+
+[33mcommit a3314c1005a3404d576dfc7eabe3df75f74e8a30[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Apr 4 12:24:47 2018 +0200
+
+    mixnet: Test with multiple auths
+    
+    Using the mock_query we can now test the mixnet chain call. I've to add
+    a new field in the Mixnet model because if we use the same server as two
+    auths we need to differ the position in the chipher chain.
+    
+    So now it's possible to use the same server as multiple authorities,
+    although this doesn't give us more security because we do multiple
+    encryption and decription, but private keys are in the same db so it's
+    the same that using one auth.
+
+[33mcommit de84ff6714787306c8a19bb72a00389718a7e1dd[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Wed Apr 4 10:59:09 2018 +0200
+
+    Hide requests query inside mods.query
+    
+    Instead of use requests directly to call to other modules, I've created
+    a python module with a function that hides the real query. With this
+    module we can mock the query to make multiple calls in tests, and as
+    side effect, the code in each module is clear.
+
+[33mcommit c0aecdc1b25eb63a73cd99a32f27779583547ee7[m
+Merge: 2459cd1 081d969
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:57:53 2018 +0200
+
+    Merge pull request #24 from wadobo/login
+    
+    Login
+
+[33mcommit 081d96906e55008a706e815969e37275c75bb0fe[m[33m ([m[1;31morigin/login[m[33m)[m
+Merge: 4dad801 2459cd1
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:57:41 2018 +0200
+
+    Merge branch 'master' into login
+
+[33mcommit 2459cd1b48072540219b94c61dd2280a9c37afd2[m
+Merge: aa766e6 33ec8a6
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:54:12 2018 +0200
+
+    Merge pull request #23 from wadobo/auth
+    
+    authentication: Submódulo de autenticación
+
+[33mcommit 33ec8a6b8c1a44b3df5281fed1743c5aac972e99[m[33m ([m[1;31morigin/auth[m[33m)[m
+Merge: d88617b aa766e6
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:53:55 2018 +0200
+
+    Merge branch 'master' into auth
+
+[33mcommit aa766e6a0d4be8b9a508abbf39aa11b7126c736b[m
+Merge: 415ebc3 8141dd9
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:52:56 2018 +0200
+
+    Merge pull request #22 from wadobo/booth
+    
+    Booth
+
+[33mcommit 415ebc338b9d88b2cb623acf8986adab33afe278[m
+Merge: 28507e1 80fba7a
+Author: danigm <danigm@wadobo.com>
+Date:   Wed Apr 4 08:52:44 2018 +0200
+
+    Merge pull request #21 from wadobo/voting-view
+    
+    voting: Vista de votacion
+
+[33mcommit d88617b3a09a76ebc14862954c6a7b9a7486c93b[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Mar 15 09:31:49 2018 +0100
+
+    Added some test when login or getuser fail.
+
+[33mcommit 80fba7aaa71d3e712dc159c2daa42d149b4c5577[m[33m ([m[1;31morigin/voting-view[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Thu Mar 15 09:14:15 2018 +0100
+
+    Added django-filters to INSTALLED_APPS for avoid browser failed when load /voting/
+
+[33mcommit 4dad80143cd5332bef465bba6d2c475244e6549e[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Mar 12 19:01:13 2018 +0100
+
+    booth: Login de usuario
+    
+    Este parche añade el login de usuario y por lo tanto, al emitir un voto
+    lo emite pasandole al store el token y el id de usuario correspondiente.
+    
+    Es responsabilidad del store verificar que ese token es válido,
+    preguntando al submódulo de autenticación y también verificar que el
+    votante está en el censo y que la votación está activa.
+
+[33mcommit 0e148f06bf9bebba3d1274f45c14c36d807e947c[m
+Merge: 8141dd9 d3bddf2
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Mar 12 18:34:20 2018 +0100
+
+    Merge branch 'auth' into login
+
+[33mcommit d3bddf2dcdf4dcae26e2f38b22f06ee1b76444b9[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Mar 12 18:26:31 2018 +0100
+
+    authentication: Vista de logout
+    
+    Esta vista permite hacer logout para destruir el token. Algo realmente
+    útil cuando es un token que se envía por la red.
+
+[33mcommit 5588a14f2a7c217d0d3e8b9536d5a933253e7260[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Mar 12 18:13:45 2018 +0100
+
+    authentication: Submódulo de autenticación
+    
+    Este parche implementa el login usando token authentication de rest
+    framework. Tras el login, el usuario tendrá un token que podrá utilizar
+    para autenticarse contra los diferentes submódulos.
+    
+    Utilizando ese token, los submódulos podrán preguntar si es correcto y
+    si es quien dice ser llamando a la API /getuser/, que para un token dado
+    nos devuelve información de este usuario.
+    
+    Close #5
+
+[33mcommit 8141dd98ce5867a7afb34c6b5fdea34c77ace4ac[m[33m ([m[1;31morigin/booth[m[33m)[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Mar 12 14:39:00 2018 +0100
+
+    booth: Cambina de votación funcional
+    
+    Esta es una primera versión de la cabina de votación. Se muestran las
+    opciones y según la opción elegida, se cifra en cliente y se envía el
+    voto al store.
+    
+    No se manda el id del votante correctamente porque falta la
+    autenticación, pero eso se puede hacer fácilmente pidiendo además del
+    voto el usuario y la contraseña para autenticar antes, haciendo una
+    petición al submódulo de autenticación.
+    
+    Close #3
+
+[33mcommit 3a60e9ab34d7e9a10e0e041d57f4ea578e5b2ca2[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 9 14:19:50 2018 +0100
+
+    voting: Vista de votacion
+    
+    Este parche añade la vista de votación. Por defecto lista todas las
+    votaciones aunque se puede filtrar por id, lo que nos permitirá acceder
+    a la votación desde los demás subsistemas.
+    
+    Esta vista en necesaria para poder implementar la cabina de votación y
+    la visualización de resultados.
+    
+    See #10, #7
+
+[33mcommit 28507e15d275cebbbebf994e1344945b25b8079a[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 19:43:10 2018 +0100
+
+    test: Scripts para pruebas de cifrado en js
+
+[33mcommit 5b1969a58d90535a59624433de094b4fad14d188[m
+Merge: 2592a25 42e1981
+Author: Victor Ramirez de la Corte <virako.9@gmail.com>
+Date:   Mon Mar 5 08:27:17 2018 +0100
+
+    Merge pull request #17 from wadobo/voting
+    
+    -- voting: Campos para guardar los votos en claro y el resultado
+    Una vez hecho el recuento es conveniente tener guardado en la votación
+    el resultado final en claro, sin asociar con los votantes. Además
+    también hay que almacenar aquí el resultado después de pasar por el post
+    procesado.
+    
+    -- voting: Recuento implementado
+    Recuento implementado dentro del modelo de Voting. Desde él método
+    `tally` se llama al `store` para obtener los votos cifrados y después
+    estos votos se pasan por la mixnet para mezclar y descifrar. El
+    resultado de la votación se almacena tal cual en el campo `tally` del
+    modelo.
+    
+    He añadido también un comando de django para lanzar con `./manage.py`
+    para probar todo el proceso. No se puede hacer en un test unitario
+    porque hace peticiones al servidor, por lo tanto hay que tener lanzado
+    el servidor con `runserver` antes de lanzar el comando `testvoting`. De
+    momento este comando crea una votación con una sóla autoridad, genera un
+    número aleatorio de votos cifrados y realiza el recuento con las
+    mixnets. El número de votos del recuento ha de coincidir con el número
+    de votos emitidos.
+    
+    -- Añadido soporte y pasos para utilizar postgres como base de datos
+
+[33mcommit 42e198120c47962bae835e523ab55d5e7129f94f[m[33m ([m[1;31morigin/voting[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Mon Mar 5 07:57:18 2018 +0100
+
+    Añadido soporte y pasos para utilizar postgres como base de datos
+
+[33mcommit 5c66f9b6729083f6e0df6d6a8340701c7581befd[m
+Merge: 17b3758 2592a25
+Author: Victor Ramirez de la Corte <virako.9@gmail.com>
+Date:   Mon Mar 5 07:36:46 2018 +0100
+
+    Merge branch 'master' into voting
+
+[33mcommit 2592a25f8eed415bfbbc91eb39d5212dbd14e819[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 11:54:07 2018 +0100
+
+    postproc: Vista de identidad
+
+[33mcommit c9b9ab0b169da8c2f3364964cd5849249d5fa8ae[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 11:32:43 2018 +0100
+
+    Renombrado de app post_processed a postproc
+
+[33mcommit 17b37586f72cddc38c45846c081785a963205614[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 13:23:32 2018 +0100
+
+    voting: Recuento implementado
+    
+    Recuento implementado dentro del modelo de Voting. Desde él método
+    `tally` se llama al `store` para obtener los votos cifrados y después
+    estos votos se pasan por la mixnet para mezclar y descifrar. El
+    resultado de la votación se almacena tal cual en el campo `tally` del
+    modelo.
+    
+    He añadido también un comando de django para lanzar con `./manage.py`
+    para probar todo el proceso. No se puede hacer en un test unitario
+    porque hace peticiones al servidor, por lo tanto hay que tener lanzado
+    el servidor con `runserver` antes de lanzar el comando `testvoting`. De
+    momento este comando crea una votación con una sóla autoridad, genera un
+    número aleatorio de votos cifrados y realiza el recuento con las
+    mixnets. El número de votos del recuento ha de coincidir con el número
+    de votos emitidos.
+
+[33mcommit 721c2069598cea430b9d38fc8e326b28af08e311[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 12:00:35 2018 +0100
+
+    voting: Campos para guardar los votos en claro y el resultado
+    
+    Una vez hecho el recuento es conveniente tener guardado en la votación
+    el resultado final en claro, sin asociar con los votantes. Además
+    también hay que almacenar aquí el resultado después de pasar por el post
+    procesado.
+
+[33mcommit 89548bf54ea3972dd06548fc7bb716ac5875ed01[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Mar 2 13:28:12 2018 +0100
+
+    store: Arreglado método `str` del modelo `Vote`
+
+[33mcommit fbacc43442c86b1df376e158e0f694b3a64b78db[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Sat Feb 24 09:33:17 2018 +0100
+
+    store: vistas de consulta y almacenamiento
+    
+    He creado el modelo básico para almacenar votos, relacionando un id de
+    votante con una votación y almacenando las dos componentes del voto
+    cifrado, a y b.
+    
+    Todas las consultas se puede hacer utilizando los filtros sobre
+    voting_id y voter_id, por lo que para ver si un votante ha votado se
+    puede consultar pasando los dos filtros y para obtener el listado de
+    votos de una votación se puede filtrar sólo por el voting_id.
+    
+    See #2
+
+[33mcommit 2a1daad4cd7c86a88922b54a44d09c0db22dfdc5[m
+Merge: 9026079 e974a2f
+Author: Victor Ramirez de la Corte <virako.9@gmail.com>
+Date:   Sun Feb 25 19:39:22 2018 +0100
+
+    Merge pull request #13 from wadobo/voting
+    
+    Voting
+
+[33mcommit e974a2f0d91d1141e728522d3b7057c9f7685830[m
+Merge: 085aa3f 9026079
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Sun Feb 25 19:21:18 2018 +0100
+
+    Merge branch 'master' into voting
+
+[33mcommit 90260799c5e0153d7e750554fdcde7a79c485d66[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Feb 19 14:12:02 2018 +0100
+
+    mixnet: Vista para descifrar
+    
+    Este parche añade la vista para descfirar a la API de mixnet. Esto
+    funciona de manera similar al mezclado (shuffle), encadenando las
+    llamadas a las siguientes autoridades is es que hay más de una.
+    
+    También he añadido un test *completo* de creación/mezcla/descifrado para
+    dos autoridades de mentira. No podemos usar la API real porque cada
+    autoridad debe llamar a la siguiente y en los tests no es fácil tener
+    varias instancias, pero podemos falsear esto creando *dos* votaciones en
+    la base de datos de test y usar esto como si tuvieramos dos autoridades
+    reales.
+
+[33mcommit fd7a6150d82408c41a292b4edafa4c0208de7424[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Feb 19 13:27:17 2018 +0100
+
+    mixnet: Añadidos algunos tests unitarios
+
+[33mcommit 39942a2f2cb378cd7113ac150050ea806cdf208f[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Sat Feb 17 00:41:59 2018 +0100
+
+    mixnet: api de mezclado
+    
+    Llamada API para el mezclado de votos y recifrado en la red de
+    autoridades Mixnet
+
+[33mcommit b635445d692f77253e164d7846ec559889105aa6[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 17:31:55 2018 +0100
+
+    mixnet: Corregido script de prueba de genkey
+
+[33mcommit c7c4544760933105995e75fb420ccab13c5f5f9a[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 17:17:44 2018 +0100
+
+    mixnet: Corregido error, votación es voting, no vote
+
+[33mcommit 85f69edccb29b1f5335345fc0a35e8e36bf8045b[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 14:45:55 2018 +0100
+
+    mixnet: Generación de clave compartida
+    
+    Implementación inicial de la generación de clave compartida y
+    almacenamiento en modelos django de una mixnet.
+
+[33mcommit 085aa3fb508deb01cd9f09edbf1573d68ae0104f[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 23 13:29:11 2018 +0100
+
+    voting: Acción para comenzar/terminar una votación
+    
+    He añadido dos acciones una para comenzar la votación, que creará una
+    mixnet para conseguir la clave pública de cifrado y otra para terminar
+    la votación.
+    
+    En la acción de terminar la votación se puede añadir el mezclado y
+    descifrado de votos cuando tengamos implementado el almacenamiento.
+    
+    see #10
+
+[33mcommit 94dbfa1502b7d6d59af4ae9ebf395dae688021aa[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 23 12:47:44 2018 +0100
+
+    voting: Modelo de votación y formluario de admin
+    
+    Modelo básico de votación con una sóla pregunta. Los números de las
+    opciones se autogeneran a partir del 2, porque el 1 no se puede cifrar
+    bien con el algoritmo de cifrado.
+    
+    see #10
+
+[33mcommit 8bee3d504f8ba0b914eb39cd596a91f502681dac[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Feb 19 14:12:02 2018 +0100
+
+    mixnet: Vista para descifrar
+    
+    Este parche añade la vista para descfirar a la API de mixnet. Esto
+    funciona de manera similar al mezclado (shuffle), encadenando las
+    llamadas a las siguientes autoridades is es que hay más de una.
+    
+    También he añadido un test *completo* de creación/mezcla/descifrado para
+    dos autoridades de mentira. No podemos usar la API real porque cada
+    autoridad debe llamar a la siguiente y en los tests no es fácil tener
+    varias instancias, pero podemos falsear esto creando *dos* votaciones en
+    la base de datos de test y usar esto como si tuvieramos dos autoridades
+    reales.
+
+[33mcommit 43947834fd675ce15edc6a1547a27a9d7cd51b4b[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Mon Feb 19 13:27:17 2018 +0100
+
+    mixnet: Añadidos algunos tests unitarios
+
+[33mcommit 0bda962939863dcca4bc8ef6913ebad582603a24[m[33m ([m[1;31morigin/mixnet2-shuffle[m[33m)[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Sat Feb 17 00:41:59 2018 +0100
+
+    mixnet: api de mezclado
+    
+    Llamada API para el mezclado de votos y recifrado en la red de
+    autoridades Mixnet
+
+[33mcommit 398e2646a9407460a0b9e378fcd593357abbd7ac[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 17:31:55 2018 +0100
+
+    mixnet: Corregido script de prueba de genkey
+
+[33mcommit 0382fdeed6eae1cc7264fb59ba3f66e29ec33869[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 17:17:44 2018 +0100
+
+    mixnet: Corregido error, votación es voting, no vote
+
+[33mcommit 6810e38563842ed887255c4c6ea10d0eee26366a[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Fri Feb 16 14:45:55 2018 +0100
+
+    mixnet: Generación de clave compartida
+    
+    Implementación inicial de la generación de clave compartida y
+    almacenamiento en modelos django de una mixnet.
+
+[33mcommit 80e8d6ab113abbb967c860d221f412c6daf69e32[m
+Merge: 50d09e5 a5ee375
+Author: danigm <danigm@wadobo.com>
+Date:   Fri Feb 16 11:09:25 2018 +0100
+
+    Merge pull request #11 from wadobo/docker
+    
+    Ficheros docker-compose y Dockerfile para despliegue
+
+[33mcommit a5ee375b13dfc6a56007409454900f63aeb4a577[m[33m ([m[1;31morigin/docker[m[33m)[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Sun Feb 11 00:37:45 2018 +0100
+
+    Ficheros docker-compose y Dockerfile para despliegue
+    
+    Este parche añade una carpeta, docker, con ficheros de configuración de
+    docker-compose, para poder desplegar la aplicación de forma rápida y
+    sencilla con contenedores docker.
+
+[33mcommit 50d09e5060123a572ded759066554432daebecea[m
+Merge: 39d28cd 6ae31b5
+Author: danigm <danigm@wadobo.com>
+Date:   Fri Dec 22 14:23:17 2017 +0100
+
+    Merge pull request #1 from wadobo/base
+    
+    Creado proyecto base con sus modulos.
+
+[33mcommit 6ae31b5b2d552ff4cf9434a5b931507337c002a0[m[33m ([m[1;31morigin/base[m[33m)[m
+Author: Victor Ramirez <virako@wadobo.com>
+Date:   Fri Dec 22 12:52:58 2017 +0100
+
+    Creado proyecto base con sus modulos.
+    
+    Se han creado los diferentes subsistemas en diferentes apps de Django: authentication, base, booth, census, mixnet, post_processed, store, visualizer y voting.
+    
+    Se ha añadido un fichero local de configuración local para seleccionar los módulos que vayamos a utilizar.
+
+[33mcommit 39d28cd3973be6dcaf084ba6cac4d9d9867eb8f0[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Tue Dec 12 13:43:19 2017 +0100
+
+    doc: Started with a list of new features to be implemented
+    
+    I've started a list of possible features to implement, each feature is
+    in a group and tagged with an estimated difficulty.
+
+[33mcommit 27b62cc8c55af891b150a291216f32d2cea542e6[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Tue Dec 12 13:23:24 2017 +0100
+
+    doc: New file describing different subsystems
+
+[33mcommit 625670f05728f2f8f4276a2b52fa849be8932948[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Tue Dec 12 12:02:38 2017 +0100
+
+    doc: Add task dificulty to each extension point in spec
+
+[33mcommit d05aa97e622a37900175860baf870bb9bbdbf9bb[m
+Author: Daniel García Moreno <danigm@wadobo.com>
+Date:   Tue Dec 12 11:57:26 2017 +0100
+
+    Readme and first spec
+
+[33mcommit 810d1b8ae703f368cec9c635bac97eef0f332920[m
+Author: danigm <danigm@wadobo.com>
+Date:   Tue Dec 12 11:54:21 2017 +0100
+
+    Initial commit
